@@ -1,0 +1,57 @@
+body { 
+    background: white; 
+    font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 14px; 
+    line-height: 1; 
+    color: #000; 
+    position: relative; 
+    -webkit-font-smoothing: antialiased; }
+
+.tic {
+    height: 95%;
+    width: 95%;
+    text-align: center;
+}
+
+#clear {
+    clear:both;
+}
+
+table {
+    /*position: relative;
+    float: left; */
+}
+
+td {
+    padding: 5px;
+    border: 1px solid #000;
+    height: 75px;
+    width: 75px;
+    font-size: 24px;
+}
+
+td:hover {
+    background-color:#A9D6C6;   
+}
+
+.score {
+    width:240px;
+    height:150px;
+    background-color:#DDD;
+    border-style:dashed;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    
+}
+
+.off {
+    position: relative;
+}
+
+.clickedHuman {
+    background-color:green;
+}
+
+.clickedComp {
+    background-color:orange;
+}
