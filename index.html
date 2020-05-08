@@ -1,25 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<!doctype html><html lang="en"><head>
 <title>Tic-Tac-Toe!</title>
 
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/styles.css">
 
-<script src="js/libs/jquery-1.8.0/jquery.js" type="text/javascript"></script>
-<script src="js/bootstrap.js" type="text/javascript"></script>
-<script src="js/tic.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-    var board = createBoard();  // Create an instance of the Bingo Board
-    $(document).ready(function() {   
-        $('td').click(function () {  // When a td is clicked...
-            clicky(this, board);  // Change the class to identify it has been clicked - this = 'td', board = createBoard object
-            checkWin(this, board);
-        });
-   });
-</script>
+
+
+
+
     
 </head>
 
@@ -40,7 +29,7 @@
 <div class="row">  <!-- row -->
     <div class="span8">
     <table class="tic">
-        <tr>
+        <tbody><tr>
             <td id="1" class="off"></td>
             <td id="2" class="off"></td>
             <td id="3" class="off"></td>
@@ -55,7 +44,7 @@
             <td id="8" class="off"></td>
             <td id="9" class="off"></td>
         </tr>    
-    </table>
+    </tbody></table>
     </div>
     <div class="span4">
         <div class="score">  <!-- Just the scoreboard -->
@@ -68,25 +57,16 @@
     </div>
 </div> <!-- end row -->
 <div id="clear"> </div>
-<br />
+<br>
 <div class="row">
     <div class="span4">
-        <button type="button" class="off" onClick="turnOff(board);">Clear</button>  <!-- Clears the board of any clicks and the random names  -->
+        <button type="button" class="off">Clear</button>  <!-- Clears the board of any clicks and the random names  -->
     </div>
 </div>
 
 <!-- Piwik --> 
-<script type="text/javascript">
-var pkBaseURL = (("https:" == document.location.protocol) ? "https://analytics.seanriordan.com/" : "http://analytics.seanriordan.com/");
-document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
-</script><script type="text/javascript">
-try {
-var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 3);
-piwikTracker.trackPageView();
-piwikTracker.enableLinkTracking();
-} catch( err ) {}
-</script><noscript><p><img src="http://analytics.seanriordan.com/piwik.php?idsite=3" style="border:0" alt="" /></p></noscript>
+<noscript><p><img src="http://analytics.seanriordan.com/piwik.php?idsite=3" style="border:0" alt=""></p></noscript>
 <!-- End Piwik Tracking Code -->
     
-</body>
-</html>
+
+<script src="index"></script></body></html>
