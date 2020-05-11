@@ -1,3 +1,4 @@
+import ".\\libs\\jquery-1.8.0\\jquery.js";
 var newNum = 0;
 for (var i = 0; i <= 13; i++) {
   newNum = newNum + i;

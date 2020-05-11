@@ -1,3 +1,4 @@
+import ".\\libs\\jquery-1.8.0\\jquery.js";
 var nameList = ['Ted', 'John', 'Bob', 'Jason', 'Charles', 'Mike', 'Sean', 'Tom', 'Bart', 'Stephen', 'Jacob', 'Doris', 'Stan', 'Cortney', 'Todd', 'James', 'Stu', 'Henry'];  // Name list array for Bingo
 
 function clicky (obj, board){  // 
