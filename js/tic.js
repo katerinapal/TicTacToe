@@ -1,3 +1,6 @@
+import ".\\libs\\jquery-1.8.0\\jquery.js";
+var countCol;
+var countRow;
 /*
 [0][0] | [1][0] | [2][0]
 [0][1] | [1][1] | [2][1]
@@ -7,7 +10,7 @@ var humanScore = 0;  // Set the score value which will be added to when a game i
 var compScore = 0;
 var tie = 0;
 
-function clicky(obj, board) {  // Changes the td class to 'clickedHuman' and sets the bingo board state to 1 for each square clicked
+export function clicky(obj, board) {  // Changes the td class to 'clickedHuman' and sets the bingo board state to 1 for each square clicked
     
     var num = obj.id.toString();  // 'State' of the current square
     
@@ -846,7 +849,7 @@ function computerTurn (board) {
     return board;
 }
 
-function createBoard () {  // Creates the tic board object.  It is 2 2D arrays.  One for the layout number and one for the current state (clicked/notclicked)
+export function createBoard() {  // Creates the tic board object.  It is 2 2D arrays.  One for the layout number and one for the current state (clicked/notclicked)
     
     var tic = {
         layout: [],
@@ -909,7 +912,7 @@ function turnOff (board) {  // Clears the board of the state, resets the values
     return board;
 }
 
-function checkWin (obj, board, score) {  // Checks for a win using 'td', board object, and score number
+export function checkWin(obj, board, score) {  // Checks for a win using 'td', board object, and score number
 
     var won = 0;  //Set the default win to 0, changed when 3 in a row for either human or computer
     

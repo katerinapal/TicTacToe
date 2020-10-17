@@ -1,17 +1,4 @@
-/*!
- * jQuery JavaScript Library v1.8.0
- * http://jquery.com/
- *
- * Includes Sizzle.js
- * http://sizzlejs.com/
- *
- * Copyright 2012 jQuery Foundation and other contributors
- * Released under the MIT license
- * http://jquery.org/license
- *
- * Date: Thu Aug 09 2012 16:24:48 GMT-0400 (Eastern Daylight Time)
- */
-(function( window, undefined ) {
+var libraryObj_$ = (function( window, undefined ) {
 var
 	// A central reference to the root jQuery(document)
 	rootjQuery,
@@ -9225,3 +9212,5 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 }
 
 })( window );
+
+export default libraryObj_$;
